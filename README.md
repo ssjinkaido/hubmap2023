@@ -4,17 +4,21 @@
 - Light augmentation (HFlip, VFlip, ShiftScaleRotate, HSV, RandomBrightnessConstrast, RGBshift).
 - 12 epochs, AdamW, lr = 0.00005.
 - Try YoloV8 but not use it due to competition restriction.
+
 ## Model used
 - Use DetectoRS + Resnet 101, image size 1536x1536.
 - Training time is around 1 hour.
+
 ## Inference 
 - Ensemble 5 models + SWA + Non maximum weighed with threshold 0.7.
 - Fill smale hole in mask.
 - No dilation in mask.
 
-## Future Work
+## Future Work and Notes
 - Should have performed pl and retrain on dataset3.
 - Should migrate to mmdet 3 to use stronger models and augmentations.
+- Segformer is a strong segmentation models.
+- YoloV8 better performance than DetectoRS.
 
 ## Useful command lines
 - python tools/train.py configs/hubmap/custom_config_ds12_fold1.py --deterministic --seed 1791095845
