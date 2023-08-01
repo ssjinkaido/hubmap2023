@@ -1,0 +1,6 @@
+
+train: /storage/tungnx/datasets/train_ds12_0/images
+val: /storage/tungnx/datasets/val0/images
+
+names:
+    0: blood_vessel
