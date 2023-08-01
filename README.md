@@ -15,6 +15,12 @@
 ## Future Work
 - Should have performed pl and retrain on dataset3.
 - Should migrate to mmdet 3 to use stronger models and augmentations.
+
+## Useful command lines
+- python tools/train.py configs/hubmap/custom_config_ds12_fold1.py --deterministic --seed 1791095845
+- python tools/test.py configs/hubmap/custom_config_ds12_fold1.py swa_r101_fold0.pth --eval segm
+
+
 ## Results 
 | Models | Public LB | Private LB |
 | -------- | -------- | -------- |
